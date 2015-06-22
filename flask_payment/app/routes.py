@@ -6,7 +6,8 @@ app = Flask(__name__)
  #opens home when endpoint met
 @app.route('/my_twilio_endpoint')
 def home():
-  return render_template('home.html')
+  return render_template('webformattest.html')
+  #return render_template('home.html')
 
 
 #opens about page when /about endpoint met
