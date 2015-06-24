@@ -1,16 +1,20 @@
+<!--GOING TO HAVE TO IMPORT TEXT_RESONSE TO GET CUSTOMER INFO, (NUMBER), or the other way around....we should already have phone number so allow remember me phone number should be false.-->
+
 {% extends "layout_stripe.html" %}
 {% block content %}
-  <form action="/charge" method="post">
+  <form action="/charge" method="post"> <!-- not capital POST?! -->
     <article>
       <label>
-        <span>Amount is $5.00</span>
+        <span></span>
       </label>
     </article>
 
-    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    <script src="https://checkout.stripe.com/checkout.js" 
+            class="stripe-button"
             data-key="{{ key }}"
             data-description="A magicamazon charge"
-            data-amount="500"
+            data-allow-remember-me="false" 
+
             ></script>
   </form>
 {% endblock %}
