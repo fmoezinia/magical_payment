@@ -20,8 +20,7 @@
 import os
 from flask import Flask, render_template, request
 import stripe
-PUBLISHABLE_KEY= 'pk_test_peLePyIXpcJWprVkixSOR99J' 
-SECRET_KEY= 'sk_test_azDI1jLdKJ9QEi7HeS78xcS8'
+# KEYS TAKEN OUT
 
  
 # stripe_keys = {
